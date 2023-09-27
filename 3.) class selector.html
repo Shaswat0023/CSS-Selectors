@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class and ID Selectors</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 9;
+    }
+    h1{
+        background: rgba(245, 245, 245, 0);
+        display: block;
+        text-shadow: 1px 1px 1px red;
+        text-align: center;
+        border: 4px solid black;
+    }
+   .Table-1{
+            border: 5px solid blueviolet;
+            border-radius: 5spx;
+            background:grey;
+            position: relative;
+            
+   }
+   table .table-rows td{
+            border: 5px solid black;
+            border-radius: 5px;
+            background:green;
+            color: aquamarine;
+            text-shadow: 1px 1px 1px black, 2px 2px 1px aqua;
+           
+    }
+    table .table-heading td{
+        border: 5px solid black;
+        border-radius: 5px;
+        background:rgb(17, 168, 228);
+        color: aquamarine;
+        text-shadow: 1px 1px 1px black, 2px 2px 1px aqua;
+    }
+   .Table-2{
+            border: 5px solid red;
+            border-radius: 5spx;
+            background:grey;
+            position: relative;
+            top: 20px;
+   }
+   table .table-rows td{
+            border: 5px solid black;
+            border-radius: 5px;
+            background:green;
+            color: aquamarine;
+            text-shadow: 1px 1px 1px black, 2px 2px 1px aqua;
+           
+    }
+    table .table-heading2 td{
+        border: 5px solid black;
+        border-radius: 5px;
+        background:rgb(17, 168, 228);
+        color: aquamarine;
+        text-shadow: 1px 1px 1px black, 2px 2px 1px aqua;
+    }
+    table .table-rows2 td{
+            border: 5px solid black;
+            border-radius: 5px;
+            background:rgb(233, 168, 5);
+            color: aquamarine;
+            text-shadow: 1px 1px 1px black, 2px 2px 1px aqua;
+           
+    }
+    
+   .Table-3{
+            border: 5px solid black;
+            border-radius: 5spx;
+            background:grey;
+            position: relative;
+            top: 40px;
+   }
+   table .table-heading3 td{
+        border: 5px solid black;
+        border-radius: 5px;
+        background:rgb(17, 168, 228);
+        color: aquamarine;
+        text-shadow: 1px 1px 1px black, 2px 2px 1px aqua;
+    }
+    table .table-rows3 td{
+            border: 5px solid black;
+            border-radius: 5px;
+            background:rgb(10, 46, 223);
+            color: rgb(228, 19, 51);
+            text-shadow: 1px 1px 1px black, 2px 2px 1px aqua;
+           
+    }
+    .paraclass{
+        position: relative;
+        top: 100px;
+        font-weight: bolder;
+        font-size: large;
+        background: hotpink;
+        border: 1px solid black;
+    }
+    #idselector{
+        position: relative;
+        top: 100px;
+        font-weight: bolder;
+        font-size: large;
+        background: rgb(228, 228, 2);
+        border: 1px solid black;
+    }
+   
+</style>
+<body>
+    <h1>Basic styling of a table</h1>
+    
+    <table class="Table-1" border="3">
+       <thead class="table-heading">
+        <td>sr no.</td>
+        <td>Name</td>
+        <td>Roll no.</td>
+        <td>Result</td>
+       </thead>
+  
+
+    <tr class="table-rows">
+        <td>1</td>
+        <td>Arnesh Guru</td>
+        <td>2004011</td>
+        <td>Pass</td>  
+    </tr>
+    <tr class="table-rows">
+        <td>2</td>
+        <td>Davesh Chandrakar</td>
+        <td>2004015</td>
+        <td>Pass</td>  
+    </tr>
+    <tr class="table-rows">
+        <td>3</td>
+        <td>Shaswat Sinha</td>
+        <td>2004030</td>
+        <td>Pass</td>  
+    </tr>
+</table>
+
+<table class="Table-2" border="3">
+    <thead class="table-heading2">
+     <td>sr no.</td>
+     <td>Name</td>
+     <td>Roll no.</td>
+     <td>Result</td>
+    </thead>
+
+
+ <tr class="table-rows2">
+     <td>1</td>
+     <td>Arnesh Guru</td>
+     <td>2004011</td>
+     <td>Pass</td>  
+ </tr>
+ <tr class="table-rows2">
+     <td>2</td>
+     <td>Davesh Chandrakar</td>
+     <td>2004015</td>
+     <td>Pass</td>  
+ </tr>
+ <tr class="table-rows2">
+     <td>3</td>
+     <td>Shaswat Sinha</td>
+     <td>2004030</td>
+     <td>Pass</td>  
+ </tr>
+</table>
+
+<table class="Table-3" border="3">
+    <thead class="table-heading3">
+     <td>sr no.</td>
+     <td>Name</td>
+     <td>Roll no.</td>
+     <td>Result</td>
+    </thead>
+
+
+ <tr class="table-rows3">
+     <td>1</td>
+     <td>Arnesh Guru</td>
+     <td>2004011</td>
+     <td>Pass</td>  
+ </tr>
+ <tr  class="table-rows3">
+     <td>2</td>
+     <td>Davesh Chandrakar</td>
+     <td>2004015</td>
+     <td>Pass</td>  
+ </tr>
+ <tr  class="table-rows3">
+     <td>3</td>
+     <td>Shaswat Sinha</td>
+     <td>2004030</td>
+     <td>Pass</td>  
+ </tr>
+</table>
+
+<p class="paraclass">We see that we can assign a class to a table and can change the appearance of the table, table heading, table rows and table data of a particular table.</p>
+<br>
+<p id="idselector">Id selector is same as class selector. Instead of assing a class to a particular element we assign a unique id to that particular element by typing id="idname"  and an id will be given to that element. To select that id is css instead of using .classname we use #idname and than we can apply the propertie. ID has more specificity than a class.
+</p>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class Selector</title>
+    <style>
+        body{
+            background: green;
+            color: white;
+        }
+        h1{
+            text-align: center;
+        }
+        #First-button{
+            width: 100%;
+        }
+        #First-button:hover{
+            background-color: red;
+            color: blue;
+        }
+        #Second-button{
+            width: 100%;
+        }
+        #Second-button:hover{
+            background-color: rgb(188, 232, 11);
+            color: rgb(1, 1, 19);
+        }
+        #Third-button{
+            width: 100%;
+        }
+        #Third-button:hover{
+            background-color: rgb(239, 9, 124);
+            color: rgb(14, 185, 215);
+        }
+        #Fourth-button{
+            width: 100%;
+        }
+        #Fourth-button:hover{
+            background-color: rgb(171, 222, 32);
+            color: rgb(240, 222, 235);
+        }
+       
+       
+        
+    </style>
+</head>
+<body>
+    <p>A css pseudo class is a keyword added to a selector that specifies a special state of the selected elements. for example, :hover can be used to change a button's color when the user's pointer hovers over it.</p>
+    <div>
+        <br><br><br>
+        <h1>Hover Propery</h1>
+        <button id="First-button">First Button</button>
+        <button id="Second-button">Second Button</button>
+        <button id="Third-button">Third Button</button>
+        <button id="Fourth-button">Fourth Button</button>
+    </div>
+    <p>There are many more pseudo class selectors like link, visited and active. Point to be noted is that a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective. a:active MUST come after a:hover in the CSS definition in order to be effective. </p>
+</body>
+</html>

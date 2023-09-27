@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    <style>
+        #paraid{
+            color: aquamarine;
+        }
+        p{
+            color: blue;
+            border: 3px solid black;
+            background: gray;
+        }
+        .paraclass{
+            color: hotpink;
+        }
+        #paraclass2{
+            color: burlywood; 
+        }
+        #paraid3{
+            color: brown;
+        }
+        .paraclass3{
+            color: cadetblue !important;
+        }
+    </style>
+</head>
+<body>
+    <h1>Specificity</h1>
+    <ul>
+        <li>
+            Because elements can have multiple CSS selectors, there is a hirarchy for the weight given to each type of the selector. Here is the logical order of selectors from least to most weight
+            <li>Type Selectors eg (h1) and pseudo-elememts eg ()::before)</li>
+            <li>Class Selectors eg( .example), attributes selectors eg([type="radio"]), pseudo classes eg (:hover)</li>
+            <li>ID selectors eg(#example)</li>
+        </li>
+    </ul>
+
+    <p class="paraclass" id="paraid">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, suscipit! Ad facilis ducimus aspernatur, voluptatibus excepturi fugiat ea sed quasi, fugit assumenda inventore, eaque harum tempora! Illum autem reprehenderit provident sit beatae aperiam error quaerat! Quia, asperiores esse exercitationem, eveniet enim error est soluta illum minima cum fugit quae nostrum, quod dolore dolores inventore minus voluptatibus suscipit. Magnam, consequatur quas eligendi consequuntur delectus dignissimos saepe dolore consectetur nostrum, reiciendis omnis. Cumque sapiente nisi similique ut porro quia temporibus deserunt perspiciatis, distinctio consequuntur nobis, magnam repellat dolorum veritatis, rerum quos! Et mollitia, aspernatur esse hic ipsa rerum? Dolorem similique quos porro.</p>
+
+    <p style="color: green;">The text color of the abpve para is assigned according to whatever written in the styling using ID selector. This prooves that the specificity of the id selector is the highest</p>
+
+    <p id="paraclass2" style="color: red;">One more thing to notice is that Inline css > internal css > External css. In the above para internal css and inline css both are written but the text color is choosen according to whatever written in inline css</p>
+    <p id="paraid3" class="paraclass3">In the above para we see that internal css and inline css both are used and internal css is used via id selector still the color is according to inline one. So this means that specificity of inline css is more that the specificity of the id selectors</p>
+    <p>In the above para both id and class selectors is used but if we give important keyword to anyone of them then no matter what that thing will only be selected.</p>
+
+   
+</body>
+</html>
