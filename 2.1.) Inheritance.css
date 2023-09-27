@@ -1,0 +1,9 @@
+ul{
+    color: black;
+}
+ul li{
+    color: black;
+}
+ul li.class-1 a{
+    color: inherit;
+}
