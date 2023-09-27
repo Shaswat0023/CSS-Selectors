@@ -1,0 +1,8 @@
+/* ID Selector */
+#Heading{
+    color: aquamarine;
+    background-color: black;
+}
+p#one{
+    color: aqua;
+}
